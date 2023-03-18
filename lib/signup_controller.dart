@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:newcap/authentication_repository.dart';
 
 class SignUpController extends GetxController {
@@ -11,13 +12,14 @@ class SignUpController extends GetxController {
   final phoneNo = TextEditingController();
 
   //call this function from Desidn $ it will do the rest
-  void registerUser(String userEmail, String userPass) {
+  void registerUser(String userEmail, String userPass , String userName, String phoneNo) {
     AuthenticationRepository.instance
-        .createUserWithEmailAndPassword(userEmail, userPass);
+        .createUserWithEmailAndPassword(userEmail, userPass,userName,phoneNo);
   }
-
   void login(String userEmail, String userPass) async {
-    AuthenticationRepository.instance
-        .signInWithEmailAndPassword(userEmail, userPass);
+    AuthenticationRepository.instance.signInWithEmailAndPassword(userEmail, userPass,);
   }
+  // void GoogleSignIn(String userEmail, String userPass) async {
+  //   AuthenticationRepository.instance.signInWithGoogle(userEmail, userPass);
+  // }
 }
