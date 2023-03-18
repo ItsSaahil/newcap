@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomeState extends State<HomePage> {
-  List<Widget> _pages = [Detail(), Container(), Predict(), Account_page()];
+  List<Widget> _pages = [Detail(), Container(), Predict(), Account()];
   var primary = Color.fromARGB(255, 227, 14, 53);
   int _currentIndex = 0;
   PageController _pageController = new PageController(initialPage: 0);
