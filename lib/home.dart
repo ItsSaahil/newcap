@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:newcap/Account.dart';
 import 'package:newcap/Detai.dart';
+import 'package:newcap/Doctor_info.dart';
 import 'package:newcap/Prediction.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,7 +14,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomeState extends State<HomePage> {
-  List<Widget> _pages = [Detail(), Container(), Predict(), Account_page()];
+  List<Widget> _pages = [Detail(), Doctor_info(), Predict(), Account_page()];
   var primary = Color.fromARGB(255, 227, 14, 53);
   int _currentIndex = 0;
   PageController _pageController = new PageController(initialPage: 0);
