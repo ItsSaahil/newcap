@@ -87,7 +87,6 @@ class _Doctor_infoState extends State<Doctor_info> {
       "https://www.apollo247.com/doctors/dr-rakesh-rattan-jalali-c4948d93-3a09-420c-98c6-ee5fc2b61ed5";
   final url7 = "https://myacare.com/doctor/dr-rajeev-kumar-india";
   final url8 = "https://www.hcgoncology.com/doctors/dr-ramesh-s-bilimagga/";
-  final url9 = "https://tmc.gov.in/index.php/en/";
 
   @override
   Widget build(BuildContext context) {
@@ -585,7 +584,7 @@ class _Doctor_infoState extends State<Doctor_info> {
                 ),
                 TextButton(
                   onPressed: () {
-                    launch(url9);
+                    launch(url2);
                   },
                   child: Text("For Appointment"),
                 )
