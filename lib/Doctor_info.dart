@@ -585,7 +585,7 @@ class _Doctor_infoState extends State<Doctor_info> {
                 ),
                 TextButton(
                   onPressed: () {
-                    launch(url7);
+                    launch(url9);
                   },
                   child: Text("For Appointment"),
                 )
