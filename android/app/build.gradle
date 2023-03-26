@@ -69,3 +69,17 @@ flutter {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
+//  signingConfigs{
+//         debug{
+//             keyAlias  'upload'
+//             keyPassword 'bhavesh'
+//             storeFile file('upload-keystore')
+//             storePassword 'bhavesh'
+//         }
+//     }
+//     buildTypes {
+//         debug {
+//             // TODO: Add your own signing config for the release build.
+//             // Signing with the debug keys for now, so `flutter run --release` works.
+//             signingConfig signingConfigs.debug
+//         }}

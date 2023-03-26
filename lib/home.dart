@@ -2,7 +2,7 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:newcap/Account.dart';
-import 'package:newcap/Detai.dart';
+import 'package:newcap/Detail.dart';
 import 'package:newcap/Doctor_info.dart';
 import 'package:newcap/Prediction.dart';
 
@@ -14,10 +14,24 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomeState extends State<HomePage> {
-  List<Widget> _pages = [Detail(), Doctor_info(), Predict(), Account_page()];
-  var primary = Color.fromARGB(255, 227, 14, 53);
+//<<<<<<< HEAD
+  List<Widget> _lis = [
+    const Detail(),
+    const Doctor_info(),
+    Predict(),
+    Account()
+  ];
+//=======
+  final List<Widget> _pages = [
+    const Detail(),
+    const Doctor_info(),
+    Predict(),
+    Account()
+  ];
+//>>>>>>> 7a508865a3c72049d58b6b64c77897921ddd502d
+  var primary = const Color.fromARGB(255, 227, 14, 53);
   int _currentIndex = 0;
-  PageController _pageController = new PageController(initialPage: 0);
+  final PageController _pageController = new PageController(initialPage: 0);
 
   @override
   Widget build(BuildContext context) {
@@ -41,23 +55,23 @@ class _HomeState extends State<HomePage> {
             BottomNavyBarItem(
                 activeColor: primary,
                 inactiveColor: Colors.black,
-                title: Text('Home'),
-                icon: Icon(Icons.home)),
+                title: const Text('Home'),
+                icon: const Icon(Icons.home)),
             BottomNavyBarItem(
                 activeColor: primary,
                 inactiveColor: Colors.black,
-                title: Text('Doctor'),
-                icon: Icon(Icons.medical_services_rounded)),
+                title: const Text('Doctor'),
+                icon: const Icon(Icons.medical_services_rounded)),
             BottomNavyBarItem(
                 activeColor: primary,
                 inactiveColor: Colors.black,
-                title: Text('Predection'),
-                icon: Icon(Icons.event_note_rounded)),
+                title: const Text('Predection'),
+                icon: const Icon(Icons.event_note_rounded)),
             BottomNavyBarItem(
                 activeColor: primary,
                 inactiveColor: Colors.black,
-                title: Text('Account'),
-                icon: Icon(Icons.manage_accounts_rounded)),
+                title: const Text('Account'),
+                icon: const Icon(Icons.manage_accounts_rounded)),
           ],
         ),
       ),
